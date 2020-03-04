@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt');
 module.exports = [
     {
         method: 'post',
-        path: '/answers',
+        path: '/api/answers',
         config: {
             handler: async (request, reply) => {
                 try {

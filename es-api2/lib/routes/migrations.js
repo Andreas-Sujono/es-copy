@@ -24,7 +24,7 @@ async function bulkUpsert(collection, inserts, criteria) {
 module.exports = [
     {
         method: 'post',
-        path: '/migrate',
+        path: '/api/migrate',
         config: {
             tags: ['api'],
             handler: async (request, reply) => {

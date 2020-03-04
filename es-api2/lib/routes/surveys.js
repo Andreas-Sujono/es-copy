@@ -3,7 +3,7 @@
 module.exports = [
     {
         method: 'get',
-        path: '/surveys',
+        path: '/api/surveys',
         config: {
             handler: (request, reply) => {
                 const Surveys = request.collections().surveys;

@@ -8,7 +8,7 @@ const cert = fs.readFileSync(process.env.PRIVATE_KEY);
 module.exports = [
     {
         method: 'post',
-        path: '/login',
+        path: '/api/login',
         config: {
             handler: async (request, reply) => {
               const email = request.payload.email;

@@ -4,7 +4,7 @@ const Boom = require('boom');
 module.exports = [
     {
         method: 'get',
-        path: '/profiles',
+        path: '/api/profiles',
         config: {
           auth: 'jwt',
           handler: (request, reply) => {
@@ -15,7 +15,7 @@ module.exports = [
     },
     {
         method: 'get',
-        path: '/profiles/{id}',
+        path: '/api/profiles/{id}',
         config: {
             handler: async (request, reply) => {
               let include = [];
