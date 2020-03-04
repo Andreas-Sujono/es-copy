@@ -1,18 +1,18 @@
 #environment use npm version 13
 version: '3'
 services:    
-  # es-client:
-  #   container_name: es-client
-  #   image: tarampampam/node
-  #   ports: 
-  #     - "2000:2000"
-  #   volumes:
-  #     - ./es-client:/app
-  #   working_dir: /app
-  #   command: sh -c 'npm install && npm start'
-  #   environment:
-  #     HOST: 'localhost'
-  #     API_HOST: 'http://localhost:2001'
+  es-client:
+    container_name: es-client
+    image: tarampampam/node
+    ports: 
+      - "2000:2000"
+    volumes:
+      - ./es-client2:/app
+    working_dir: /app
+    command: sh -c 'npm install && npm start'
+    environment:
+      HOST: 'localhost'
+      API_HOST: 'http://localhost:2001'
 
   mongo:
     container_name: es-mongo
@@ -32,7 +32,7 @@ services:
     ports:
       - "2001:2001"
     volumes:
-      - ./es-api:/app
+      - ./es-api2:/app
     environment:
       - MONGO_USERNAME=sginnovate
       - MONGO_PASSWORD=angguanyang

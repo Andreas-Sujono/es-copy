@@ -4,10 +4,10 @@
 # COPY ./es-client /app
 # WORKDIR /app
 
-# # ENV HOST='http://54.169.88.207/'
+# # ENV HOST='http://13.250.45.3/'
 # # ENV API_HOST='http://localhost:2001'
 
-# VOLUME ./es-client:/app
+# VOLUME ./es-client2:/app
 
 # EXPOSE 2000
 
@@ -31,7 +31,7 @@
 # # ENV MANDRILL_API_KEY='Y8tAqU3t9FX5gpn_MDTjZA'
 # # ENV ORIGINS='["http://localhost:2000"]'
 
-# VOLUME ./es-api:/app
+# VOLUME ./es-api2:/app
 # EXPOSE 2001
 
 # CMD sh -c "apk --no-cache add --virtual builds-deps build-base python && apk add --update python g++ make && npm install && npm install bcrypt && npm start"
