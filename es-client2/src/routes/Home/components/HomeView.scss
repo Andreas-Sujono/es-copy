@@ -1,0 +1,43 @@
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.7s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero {
+  width: 100vw;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/hero.jpg');
+  background-position: 60%;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 200;
+}
+
+.intro {
+  padding: 10vw;
+  a {
+    opacity: 0.8;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000000;
+    &:hover {
+      color: #FF4612;
+    }
+  }
+}
