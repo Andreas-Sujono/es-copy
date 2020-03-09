@@ -14,5 +14,21 @@
     "firstName": "Alex",
     "lastName": "Lin",
     "type": "admin"
+  },
+  {
+    "_id": "R2qg3g26s",
+    "email": "cheelok.lin@gmail.com",
+    "password": "ntuitive1234",
+    "firstName": "Alex",
+    "lastName": "Lin",
+    "type": "admin"
+  },
+  {
+    "_id": "R2qg3g26s",
+    "email": "ntuitsg@gmail.com",
+    "password": "ntuitive1234",
+    "firstName": "Boonchow",
+    "lastName": "",
+    "type": "admin"
   }
 ]

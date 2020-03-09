@@ -4,7 +4,7 @@ const Boom = require('boom');
 module.exports = [
     {
         method: 'get',
-        path: '/api/users',
+        path: '/users',
         config: {
           auth: 'jwt',
           handler: async (request, reply) => {

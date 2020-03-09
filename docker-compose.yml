@@ -11,8 +11,8 @@ services:
     working_dir: /app
     command: sh -c 'npm install && npm start'
     environment:
-      HOST: 'localhost'
-      API_HOST: '/api'
+      HOST: '52.221.217.78'
+      API_HOST: 'http://52.221.217.78:2001'
 
   mongo:
     container_name: es-mongo
@@ -38,7 +38,7 @@ services:
       - MONGO_PASSWORD=angguanyang
       - MONGO_DB=admin
       - MANDRILL_API_KEY=Y8tAqU3t9FX5gpn_MDTjZA
-      - ORIGINS=["http://localhost:2000"]
+      - ORIGINS=["http://52.221.217.78:2000","http://localhost:2000","http://localhost","http://52.221.217.78","52.221.217.78:2000","localhost:2000","52.221.217.78","localhost"]
       - PRIVATE_KEY=/app/private.key
       - PUBLIC_KEY=/app/public.key
     working_dir: /app

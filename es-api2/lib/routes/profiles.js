@@ -15,7 +15,7 @@ module.exports = [
     },
     {
         method: 'get',
-        path: '/api/profiles/{id}',
+        path: '/profiles/{id}',
         config: {
             handler: async (request, reply) => {
               let include = [];

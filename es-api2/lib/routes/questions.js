@@ -3,7 +3,7 @@
 module.exports = [
     {
         method: 'get',
-        path: '/api/questions',
+        path: '/questions',
         config: {
             handler: async (request, reply) => {
                 const params = request.query;
